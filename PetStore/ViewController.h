@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MyCustomControlsFramework/MyCustomControlsFramework.h>
 
 @interface ViewController : UIViewController
 

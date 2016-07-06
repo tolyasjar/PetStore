@@ -16,7 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    StepperView *stepperView = [[StepperView alloc]initWithFrame:CGRectMake(50, 50, 100, 100)];
+    stepperView.minValue = 0;
+    stepperView.maxValue = 10;
+    stepperView.stepperValue = 5;
+
+    [self.view addSubview:stepperView];
+    
 }
 
 - (void)didReceiveMemoryWarning {

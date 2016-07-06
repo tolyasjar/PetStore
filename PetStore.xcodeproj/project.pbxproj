@@ -13,7 +13,23 @@
 		C8FCCFF51D2D80F200EAF255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8FCCFF31D2D80F200EAF255 /* Main.storyboard */; };
 		C8FCCFF71D2D80F200EAF255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8FCCFF61D2D80F200EAF255 /* Assets.xcassets */; };
 		C8FCCFFA1D2D80F200EAF255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8FCCFF81D2D80F200EAF255 /* LaunchScreen.storyboard */; };
+		C8FCD0021D2D811200EAF255 /* MyCustomControlsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FCD0011D2D811200EAF255 /* MyCustomControlsFramework.framework */; };
+		C8FCD0041D2D819800EAF255 /* MyCustomControlsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8FCD0011D2D811200EAF255 /* MyCustomControlsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8FCD0051D2D819800EAF255 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C8FCD0041D2D819800EAF255 /* MyCustomControlsFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C8FCCFE71D2D80F200EAF255 /* PetStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 		C8FCCFF61D2D80F200EAF255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8FCCFF91D2D80F200EAF255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8FCCFFB1D2D80F200EAF255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8FCD0011D2D811200EAF255 /* MyCustomControlsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyCustomControlsFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FCD0021D2D811200EAF255 /* MyCustomControlsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 		C8FCCFDE1D2D80F200EAF255 = {
 			isa = PBXGroup;
 			children = (
+				C8FCD0011D2D811200EAF255 /* MyCustomControlsFramework.framework */,
 				C8FCCFE91D2D80F200EAF255 /* PetStore */,
 				C8FCCFE81D2D80F200EAF255 /* Products */,
 			);
@@ -89,6 +108,7 @@
 				C8FCCFE31D2D80F200EAF255 /* Sources */,
 				C8FCCFE41D2D80F200EAF255 /* Frameworks */,
 				C8FCCFE51D2D80F200EAF255 /* Resources */,
+				C8FCD0051D2D819800EAF255 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +285,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PetStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = applan.PetStore;
@@ -276,6 +300,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PetStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = applan.PetStore;
