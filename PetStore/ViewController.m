@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    StepperView *stepperView = [[StepperView alloc]initWithFrame:CGRectMake(50, 50, 100, 100)];
+    StepperView *stepperView = [[StepperView alloc]initWithFrame:CGRectMake(50, 50, 400, 400)];
     stepperView.minValue = 0;
     stepperView.maxValue = 10;
     stepperView.stepperValue = 5;
